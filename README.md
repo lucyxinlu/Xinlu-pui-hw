@@ -1,5 +1,5 @@
 # Xinlu-pui-hw
-Assignment 1: Deployed website:
+Deployed website: https://lucyxinlu.github.io/Xinlu-pui-hw/
 
-              Repository link:https://github.com/lucyxinlu/Xinlu-pui-hw
+Repository link:https://github.com/lucyxinlu/Xinlu-pui-hw
               

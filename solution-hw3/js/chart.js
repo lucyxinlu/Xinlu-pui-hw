@@ -1,52 +1,64 @@
 
 const basePrice=2.49; 
-const glazingPriceOriginal=0;
-const glazingPriceSugar=0;
-const glazingPriceVanilla=0.5;
-const glazingPriceDouble=1.5;
-let glazingInput="keep original";
-let sizeInput=1;
+let glazingPrice={
+    original:0,
+    sugar:0,
+    vanilla:0.5,
+    double:1.5,
+};
+let Input={
+    // these are the initial input in the dropdown fields.
+    glazingInput:"keep original",
+    sizeInput:1,
+};
 
 function glazingChange(){
-    glazingInput=document.querySelector('#glazingOptions').value;
+    Input.glazingInput=document.querySelector('#glazingOptions').value;
     update();
-    // return glazingInput;
+   
 }
 function sizeChange(){
-    sizeInput=document.querySelector('#sizeOptions').value;
+    Input.sizeInput=document.querySelector('#sizeOptions').value;
     update();
-    // return sizeInput;
+    
 }
+// Above two functions are to get the user input in the page
 
 function discount(){
-    if(sizeInput>=6){
-        packPrice=sizeInput-(sizeInput/6);}
-        else{packPrice=sizeInput;};
+    if(Input.sizeInput>=6){
+        packPrice=Input.sizeInput-(Input.sizeInput/6);
+    }
+    else {
+        packPrice=Input.sizeInput;
+    }
     return packPrice;
 }
+// discount function is to caculate the final packsize based on the table
 
 
 function priceCaculation(){
-    packPrice=discount();
-    if (glazingInput==="keep original"){
-        finalPrice=(basePrice+glazingPriceOriginal) * packPrice;
-    }else if (glazingInput=="sugar milk"){
-         finalPrice=(basePrice+glazingPriceSugar) * packPrice;
-    }else if(glazingInput=="vanilla milk"){
-         finalPrice=(basePrice+glazingPriceVanilla) * packPrice;
-    }else if(glazingInput=="double chocolate"){ 
-          finalPrice=(basePrice+glazingPriceDouble) * packPrice;
+    let packPrice=discount();
+    if (Input.glazingInput==="keep original"){
+        finalPrice=(basePrice+glazingPrice.original) * packPrice;
+    }else if (Input.glazingInput=="sugar milk"){
+         finalPrice=(basePrice+glazingPrice.sugar) * packPrice;
+    }else if(Input.glazingInput=="vanilla milk"){
+         finalPrice=(basePrice+glazingPrice.vanilla) * packPrice;
+    }else if(Input.glazingInput=="double chocolate"){ 
+          finalPrice=(basePrice+glazingPrice.double) * packPrice;
     
     }  
-
+    // The above way is more intuitive for me, and I thought about
+    // using the loops but I don't know how to apply objects in this way.
     // const glazingList = ["keep original","sugar milk","vanilla milk","double chocolate"];
-    // const glazingPrice = [0, 1, 1, 2]
+    // const glazingPrice = [0, 0, 0.5, 1.5];
     // for (i=0;i++;i<4){
     //     if (glazingInput == glazingList[i]){
-    //         finalPrice = glazingPrice[i];
+    //         singlePrice = basePrice+glazingPrice[i];
     //         break;
     //     }
-    // }
+    // };
+    // finalPrice=singlePrice*packPrice;
     return (Math.floor(finalPrice*100)/100);
   
 }
@@ -56,6 +68,7 @@ function update(){
     finalResult.innerText ="$"+ " "+checkoutPrice;
     return finalResult;
 }
+// update the final price value in the html
 
 
 

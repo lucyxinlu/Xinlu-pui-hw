@@ -1,5 +1,5 @@
 
-// update the image and baseprice once the page is redirected
+//  update the image and baseprice once the page is redirected
 
     // to get the URL params first from the gallery page link
 const queryString = window.location.search;

@@ -1,0 +1,391 @@
+/*The following is CSS for Gallery Page*/
+/*the navigation CSS*/
+.header{
+    display:flex;
+}
+.header-logo{
+    width:360px;
+    height:360px;
+    margin-top:30px;
+    margin-left:30px;
+    padding-right:20px;
+    flex-shrink:0;
+}
+.header-content{
+    flex-grow:1;
+}
+.header-content-navigation{
+    display:flex;
+    justify-content: flex-end;
+    
+    
+}
+
+#logo-line{
+    height:5px;
+    background-color:#000
+}
+
+
+body{
+    font-family:Roboto,Arial,Helvetica,sans-serif;
+    font-size:18px;
+    color:#000;
+    width:1200px;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+.navigation-chosen p{
+    padding-right: 100px;
+
+    font-weight:600;
+    font-size:22px;
+}
+.navigation-unchosen p{
+    padding-right:100px;
+    font-weight:200;
+    font-size:22px;
+}
+
+mark{
+    background-color:yellow;
+}
+
+#type-title{ 
+    
+    font-weight:200;
+    font-size:30px;
+    margin-top:80px;
+}
+/*the first row of the product gallery*/
+.first-row{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.original{
+    width:300px;
+    margin:10px auto 0px auto;
+    vertical-align:top;
+    font-size:18px;
+    padding:40px;
+}
+.original-thumbnail{
+    width:300px;
+    height:320px;
+    border:4px solid #000;
+}
+#original-price{
+    margin-top:-16px;
+}
+.original:hover{
+    background-color:yellow;
+    
+}
+
+
+.apple{
+    width:300px;
+    margin:10px auto 0px auto;
+    vertical-align:top;
+    font-size:18px;
+    padding: 40px;
+}
+.apple-thumbnail{
+    width:300px;
+    height:320px;
+    border:4px solid #000;
+}
+#apple-price{
+    margin-top:-16px;
+}
+.apple:hover{
+    background-color:yellow;
+    
+}
+
+
+.raisin{
+    width:300px;
+    margin:10px auto 0px auto;
+    vertical-align:top;
+    font-size:18px;
+    cursor:pointer;
+    padding:40px;
+    
+}
+.raisin-thumbnail{
+    width:300px;
+    height:320px;
+    border:4px solid #000;
+   
+    
+}
+#raisin-price{
+    margin-top:-16px;
+}
+.raisin:hover{
+    background-color:yellow;
+    
+}
+/*the second row of the product gallery*/
+.second-row{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.walnut{
+    width:300px;
+    margin:10px auto 0px auto;
+    vertical-align:top;
+    font-size:18px;
+    padding:40px;
+}
+.walnut-thumbnail{
+    width:300px;
+    height:320px;
+    border:4px solid #000;
+}
+#walnut-price{
+    margin-top:-16px;
+}
+.walnut:hover{
+    background-color:yellow;
+    
+}
+
+.double{
+    width:300px;
+    margin:10px auto 0px auto;
+    vertical-align:top;
+    font-size:18px;
+    padding:40px;
+}
+.double-thumbnail{
+    width:300px;
+    height:320px;
+    border:4px solid #000;
+}
+#double-price{
+    margin-top:-16px;
+}
+.double:hover{
+    background-color:yellow;
+    
+}
+
+
+.strawberry{
+    width:300px;
+    margin:10px auto 0px auto;
+    vertical-align:top;
+    font-size:18px;
+    padding:40px;
+}
+.strawberry-thumbnail{
+    width:300px;
+    height:320px;
+    border:4px solid #000;
+}
+#strawberry-price{
+    margin-top:-16px;
+}
+.strawberry:hover{
+    background-color:yellow;
+    
+}
+
+.original-detail{
+    width:240px;
+    margin: auto;
+}
+
+/*The following is CSS for Detail Page */
+.product-detail{
+    display:flex;
+    justify-content:center;
+    
+}
+.product-detail-image{
+    
+    padding-right:60px;
+}
+.product-detail-content{
+    padding:60px;
+}
+.detail-picture{
+    width:500px;
+    height:500px;
+    margin:0px;
+    border:4px solid black;
+    display:block;
+}
+.glazing{
+   width:240px;
+   margin: 30px auto 0px auto;
+}
+.size{
+    width:240px;
+    margin: 30px auto 0px auto;
+ }
+select{
+    width:240px;
+    height:40px;
+    border:2px solid black;
+    font-size:16px;
+}
+
+.results{
+    display:flex;
+    justify-content:end;
+    width:260px;
+    margin:60px auto;
+    font-weight:900;
+    font-size:20px;
+
+}
+.btn-add{
+    display:block;
+    margin:0px 0px 0px 60px;
+    font-size: 20px;
+    font-weight:700;
+    border:2px solid black;
+    background-color:yellow;
+}
+/*The following is CSS for Shopping Cart Page*/
+.cart-product-original{
+    display:flex;
+    justify-content: flex-end;
+}
+.cart-original{
+    width:160px;
+  
+    padding:80px;
+}
+.remove{
+    font-weight:700;
+    font-size:12px;
+    margin-top:-4px;
+
+}
+.cart-original-pic{
+    width:160px;
+    height:160px;
+    border:4px solid black;
+
+}
+.original-description{
+
+    padding:100px 100px 80px 0px;
+}
+.pricetag{
+
+    padding:120px 100px 120px 100px;
+}
+
+.cart-original-type{
+    font-size:20px;
+  
+    
+}
+.cart-original-glazing{
+    font-size:20px;
+    
+    margin-top:-16px;
+}
+.cart-original-size{
+    font-size:20px;
+   
+    margin-top:-16px;
+}
+.cart-original-price{
+    font-size:24px;
+    text-align:center;
+}
+.cart-product-double{
+    display:flex;
+    justify-content: flex-end;
+
+}
+.cart-double{
+    width:160px;
+    padding:80px;
+}
+.cart-double-pic{
+    width:160px;
+    height:160px;
+    border:4px solid black;
+
+}
+.double-description{
+
+    padding:100px 0px 80px 0px;
+}
+.pricetag-double{
+
+    padding:120px 100px 120px 100px;
+}
+.cart-double-type{
+    font-size:20px;
+  
+    
+}
+.cart-double-glazing{
+    font-size:20px;
+   
+    margin-top:-16px;
+}
+.cart-double-size{
+    font-size:20px;
+    
+    margin-top:-16px;
+}
+.cart-double-price{
+    font-size:24px;
+    text-align:center;
+}
+
+.bottom-line{
+    position:relative;
+    left:200px;
+    height:5px;
+    background-color:#000;
+    width:800px;
+    margin-top:50px;
+    
+    
+    
+}
+.final-price{
+    display:flex;
+   justify-content: flex-end;
+   align-content:space-around;
+   
+}
+.final-price p{
+    font-size:24px;
+    margin-right:100px;
+    
+}
+#total-text{
+    margin-right:340px;
+}
+
+.btn-pay{
+    margin-left: auto;
+    margin-right: 75px;
+    font-size: 20px;
+    font-weight:700;
+    border:2px solid black;
+    background-color:yellow;
+    display:block;
+    width:140px;
+    height:50px;
+
+
+
+}

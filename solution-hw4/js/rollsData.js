@@ -1,3 +1,4 @@
+// I add alttext into the object
 const rolls = {
     "Original": {
         "basePrice": 2.49,

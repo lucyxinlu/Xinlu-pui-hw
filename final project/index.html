@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Audio Visualization</title>
+        <!-- <script src="js/jquery-3.6.1.min copy.js" defer></script> -->
+        <!-- <script type="module"src="js/three.js" defer></script> -->
+        <script src="js/three-library/build/three.js" defer></script>
+        <script src="js/OrbitControls.js" defer></script>
+        <script src="js/main.js" defer></script>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <!-- <body > -->
+     
+        <h1>Hi There, Welcome To The Audio Visualization Playground</h1>
+        
+        <div id="main">
+          <div id="left-content">
+              <div id="userInput">
+                
+                  <label for="thefile"><span>Upload an audio file</span></label>
+                  <input type="file" id="thefile" accept="audio/*"/>
+                
+              
+              </div>
+              <!-- <audio controls id="audioControls"></audio> -->
+              <section class="personalization">
+                <h2>Personalized Effects</h2>
+                <div id="backgroundOp">
+                    <p>Background Choice</p>
+                    <select id="background" onchange="myFunction()">
+                        <option value="">Select a background</option>
+                        <option value="./background/light-spot.jpg">Light spot</option>
+                        <option value="./background/silhouette-in-glass.jpg">Glass silhouette</option>
+                        <option value="./background/star-sky.jpg">Star sky</option>
+                      </select> 
+                </div>
+                <div id="colorOp">
+                    <p>Color Choice</p>
+                    <div>
+                      <label id="colorOphex"for="hex">Hex value</label>
+                      <input type="text" id="hex" onchange="myFunction()">
+                      
+                      <label id="colorOpcolor"for="color">Color</label>
+                      <input type="color" id="color">
+                      
+                    </div>
+                </div>
+                <div id="patternOp">
+                    <p>Pattern Choice</p>
+                    <select id="patternChoice" onchange="myFunction()">
+                        <option value="">Select a pattern</option>
+                        <option value="bar">Bar</option>
+                        <option value="bowknot">Bowknot</option>
+                        <option value="traingle">Traingle</option>
+                        <option value="ring">Ring</option>
+                      </select> 
+                </div>
+                
+              </section>
+            <div class="buttons">
+              <button id="playBtn">Play</button>
+              <button id="pauseBtn">Pause</button>
+            </div>
+          </div>
+
+        
+          <div id="container">
+    
+          
+          </div>
+
+        </div>
+        
+        
+  
+    </body>
+    
+</html>
